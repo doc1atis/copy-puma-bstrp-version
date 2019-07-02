@@ -1,0 +1,20 @@
+.row-1-header {
+  display: grid;
+  grid-template-areas: "south menu home";
+  grid-template-columns: 1fr 1fr 2fr;
+  background-color: #191919;
+  color: white;
+  grid-area: row-1-header;
+
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.header-link {
+  text-decoration: none;
+  color: white;
+  margin-left: 60px;
+}

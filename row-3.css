@@ -1,0 +1,42 @@
+.row-3-pictures-x4 {
+  display: grid;
+  grid-template-areas: "picture-1 picture-2 picture-3 picture-4";
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: row-3;
+  background-color: #191919;
+  justify-items: center;
+}
+
+.picture-row-3 {
+  width: 94%;
+}
+
+.row-3-picture-1 {
+  padding-left: 40px;
+}
+
+.row-3-picture-4 {
+  padding-right: 40px;
+}
+
+@media (max-width: 766px) {
+  .row-3-pictures-x4 {
+    /* background-color: red; */
+    grid-template-areas:
+      "picture-1"
+      "picture-2"
+      "picture-3"
+      "picture-4";
+
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .picture-row-3 {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    /* height: 400px; */
+  }
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "row-1-header"
+    "row-2"
+    "row-3"
+    "row-4"
+    "row-5"
+    "row-6"
+    "row-7";
+
+  grid-template-rows: 190px repeat(6, max-content);
+
+  background-color: #191919;
+  row-gap: 60px;
+}

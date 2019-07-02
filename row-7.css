@@ -1,0 +1,31 @@
+.row-7-pictures-x1 {
+  display: grid;
+  grid-template-areas: "picture-1";
+  grid-area: row-7;
+  background-color: #191919;
+  justify-items: start;
+}
+
+.row-7-picture-1 {
+  padding-left: 45px;
+
+  width: 25%;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 766px) {
+  .row-7-pictures-x1 {
+    /* background-color: red; */
+
+    grid-template-rows: repeat(1, max-content);
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .picture-row-7 {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    /* height: 400px; */
+  }
+}
