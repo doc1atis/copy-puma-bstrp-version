@@ -6,19 +6,25 @@ body {
   padding: 0;
 }
 
-.main-container {
-  display: grid;
-  grid-template-areas:
-    "row-1-header"
-    "row-2"
-    "row-3"
-    "row-4"
-    "row-5"
-    "row-6"
-    "row-7";
-
-  grid-template-rows: 190px repeat(6, max-content);
-
+.my-main-container {
+  padding-right: 40px;
+  padding-left: 40px;
   background-color: #191919;
-  row-gap: 60px;
+  /* background-color: red; */
 }
+
+.row {
+  margin-bottom: 40px;
+}
+
+.wrapit {
+  margin-bottom: 90px;
+  height: 100px;
+  background-color: #191919;
+}
+
+/* @media (max-width: 973px) {
+  .my-main-container {
+    background-color: red;
+  }
+} */
